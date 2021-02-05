@@ -1,0 +1,164 @@
+@font-face {
+  font-family: magical;
+  src: url(./fonts/QuiteMagicalRegular-8VA2.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: magical;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #accde2;
+}
+
+.app header {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.app header .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app header .title img {
+  width: 50px;
+  margin-right: 11px;
+}
+
+.app header .title h1 {
+  font-size: 42px;
+}
+
+.app header h3 {
+  font-size: 27px;
+}
+
+.app main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app main .card-deck {
+  width: 130px;
+  height: 400px;
+  position: relative;
+}
+
+.app main .card-deck .card {
+  position: absolute;
+  top: 10%;
+  z-index: 1;
+  background-color: #fcedba;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+}
+
+.app main .card-deck .card td {
+  padding: 7px;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+  text-shadow: none;
+}
+
+.app main .card-deck .card-bg {
+  width: 130px;
+  height: 308px;
+  background-color: #bba889;
+  border: 1px solid #000;
+  border-radius: 0.5rem;
+  position: absolute;
+}
+
+.app main .push {
+  margin-top: 5rem;
+}
+
+.app main .controls {
+  height: 150px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.app main .controls p {
+  flex-basis: 100%;
+  font-size: 30px;
+}
+
+.app main .controls .num {
+  font-size: 100px;
+  text-shadow: 0 0 3px #000;
+}
+
+.app main .controls .start {
+  padding: 1rem;
+  background-color: #fcedba;
+  font-size: 50px;
+  border-radius: 1rem;
+  border-top: 2px solid #bba889;
+  border-left: 2px solid #bba889;
+  border-bottom: 2px solid #74564a;
+  border-right: 2px solid #74564a;
+}
+
+.app main .controls .finish {
+  padding: 1rem;
+  background-color: #fcedba;
+  font-size: 30px;
+  border-radius: 1rem;
+  border-top: 2px solid #bba889;
+  border-left: 2px solid #bba889;
+  border-bottom: 2px solid #74564a;
+  border-right: 2px solid #74564a;
+}
+
+.app main .controls .yes {
+  flex-basis: 42%;
+  height: 60px;
+  font-size: 30px;
+  background-color: #bafcc8;
+  border-radius: 1rem;
+  border-top: 2px solid #79b797;
+  border-left: 2px solid #79b797;
+  border-bottom: 2px solid #326558;
+  border-right: 2px solid #326558;
+}
+
+.app main .controls .no {
+  flex-basis: 42%;
+  height: 60px;
+  font-size: 30px;
+  background-color: #fcbaba;
+  border-radius: 1rem;
+  border-top: 2px solid #bb7589;
+  border-left: 2px solid #bb7589;
+  border-bottom: 2px solid #74234a;
+  border-right: 2px solid #74234a;
+}
+
+.app main .controls button {
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
