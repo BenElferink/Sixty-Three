@@ -25,7 +25,7 @@ export default function Analyze({ num, setNum, toggleFinish }) {
     swapCards();
     setTimeout(() => {
       setDisableBtn(false);
-    }, 500);
+    }, 700);
   };
 
   const clickYes = () => {
